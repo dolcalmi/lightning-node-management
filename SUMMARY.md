@@ -7,7 +7,7 @@
 ## Tipos de nodo
 * [Comercio](nodetype.merchant.md)
 * [Gasto](nodetype.spending.md)
-* [Routing](nodetype.routing.md)
+* [Enrutamiento](nodetype.routing.md)
 
 ## Advanced Tools
 * [Methods to create a balanced channel with a trusted peer](balancedchannelcreation.md)
