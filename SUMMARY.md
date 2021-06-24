@@ -1,12 +1,12 @@
 # Table of contents
 
-* [Administración de un nodo Lightning](README.md)
+* [General](README.md)
 * [Crear liquidez entrante](createinboundliquidity.md)
 * [Crear liquidez saliente](createoutboundliquidity.md)
 
-## Node Types
+## Tipos de nodo
 * [Comercio](nodetype.merchant.md)
-* [Spending](nodetype.spending.md)
+* [Gasto](nodetype.spending.md)
 * [Routing](nodetype.routing.md)
 
 ## Advanced Tools

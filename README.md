@@ -1,4 +1,4 @@
-# Administración de un nodo Lightning
+# General
 
 ## Conexiones (peer) y Canales
 * Los 'Peers' son nodos conectados entre si a través de internet \(TCP/IP\).

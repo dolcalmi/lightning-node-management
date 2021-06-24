@@ -14,8 +14,8 @@ Destinado a recibir pagos.
 * mayormente remota
 
 ### Disponibilidad (Uptime)
- * alta pero no perfecta
- * la no disponibilidad afecta las ventas
+* alta pero no perfecta
+* la no disponibilidad afecta las ventas
 
 ### Administración
 * [Loop out](https://github.com/lightninglabs/loop#lightning-loop) ([Autoloop](https://docs.lightning.engineering/advanced-best-practices/advanced-best-practices-overview/autoloop)) para vaciar canales existentes

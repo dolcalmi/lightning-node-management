@@ -1,30 +1,30 @@
-# Spending node
-Aimed for spending bitcoin cheaply and privately.
+# Nodo para gastar
+Destinado a gastar bitcoins de forma económica y privada.
 
-### Capital requirement
-* low
-* depends on spending plan and available funds
-* allows to use up unmixed funds without creating change
+### Requerimientos de capital
+* bajo
+* dependiendo del nivel de gasto y fondos disponibles
+* permite utilizar fondos sin crear cambio(vuelto de dinero)
 
-### Channels and peers
-* one channel to a well connected, capitalized and high uptime node is a good start, see the [Bos list ](bosscore.md) to pick a peer
-* use private channels to avoid publishing the node and the funding transactions
-* offline private channels don't damage the reliability of the network
+### Canales y nodos
+* un canal a un nodo "bien conectado" con capital y alta disponibilidad es un buen comienzo. Consulte [Bos list](bosscore.md) para elegir uno
+* use canales privados para evitar hacer público el nodo y las transacciones.
+* los canales privados desconectados no dañan la confiabilidad de la red.
 
-### Liquidity
-* mostly local
+### Liquidez
+* mayormente local
 
-### Uptime
-* not a factor (spend only when online)
+### Disponibilidad (Uptime)
+* no es un factor (gaste solo cuando esté conectado)
 
-### Management
-* close depleted channels 
-* [can refill via LN](createoutboundliquidity.md)
-* starting a new node often improves the onchain privacy
+### Administración
+* cerrar canales agotados
+* [puede recargar a través de LN](createoutboundliquidity.md)
+* crear un nuevo nodo mejora la privacidad de la red
 
-### Examples
-* [Mobile wallets](createinboundliquidity.md#non-custodial-wallets)
-* [Self hosted node on dedicated hardware](https://github.com/bavarianledger/bitcoin-nodes)
-* Privacy oriented: [slides about Running a Lightning Node Privately](https://keybase.pub/oms/slides/Running_a_Lightning_Node_Privately.pdf)
-* Use for social media like [Sphinx chat](https://sphinx.chat/)  
-  Discussion: https://github.com/rootzoll/raspiblitz/issues/2073
+### Ejemplos
+* [Billeteras móviles](createinboundliquidity.md#non-custodial-wallets)
+* [Nodo auto-hospedado en hardware dedicado](https://github.com/bavarianledger/bitcoin-nodes)
+* Privacidad: [diapositivas sobre cómo gestionar un nodo Lightning de forma privada](https://keybase.pub/oms/slides/Running_a_Lightning_Node_Privately.pdf)
+* Úselo para redes sociales como [Sphinx chat](https://sphinx.chat/)  
+  Discusión: https://github.com/rootzoll/raspiblitz/issues/2073
