@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Overview](README.md)
-* [Create inbound liquidity](createinboundliquidity.md)
-* [Create outbound liquidity](createoutboundliquidity.md)
+* [Administración de un nodo Lightning](README.md)
+* [Crear liquidez entrante](createinboundliquidity.md)
+* [Crear liquidez saliente](createoutboundliquidity.md)
 
 ## Node Types
-* [Merchant](nodetype.merchant.md)
+* [Comercio](nodetype.merchant.md)
 * [Spending](nodetype.spending.md)
 * [Routing](nodetype.routing.md)
 
@@ -25,4 +25,3 @@
 
 ## Donate
 * [Donations](donations.md)
-
