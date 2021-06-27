@@ -10,7 +10,7 @@
 * [Enrutamiento](nodetype.routing.md)
 
 ## Advanced Tools
-* [Methods to create a balanced channel with a trusted peer](balancedchannelcreation.md)
+* [Métodos para crear un canal balanceado con un nodo de confianza](balancedchannelcreation.md)
 * [Pool usage notes](pool.md)
 * [Bos Score](bosscore.md)
 * [lnd.conf example](lnd.conf.md)
