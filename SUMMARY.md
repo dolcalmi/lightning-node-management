@@ -14,7 +14,7 @@
 * [Notas de uso de Lightning Pool](pool.md)
 * [Bos Score](bosscore.md)
 * [Ejemplo lnd.conf](lnd.conf.md)
-* [Advanced and automated fee settings](fees.md)
+* [Configuración avanzada y automatizada de costos](fees.md)
 * [Set up a Watchtower and a Client on the Lightning Network](watchtower.md)
 
 ## Technicals
