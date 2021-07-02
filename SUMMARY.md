@@ -13,7 +13,7 @@
 * [Métodos para crear un canal balanceado con un nodo de confianza](balancedchannelcreation.md)
 * [Notas de uso de Lightning Pool](pool.md)
 * [Bos Score](bosscore.md)
-* [lnd.conf example](lnd.conf.md)
+* [Ejemplo lnd.conf](lnd.conf.md)
 * [Advanced and automated fee settings](fees.md)
 * [Set up a Watchtower and a Client on the Lightning Network](watchtower.md)
 
