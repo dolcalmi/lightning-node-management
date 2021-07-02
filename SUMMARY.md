@@ -9,7 +9,7 @@
 * [Gasto](nodetype.spending.md)
 * [Enrutamiento](nodetype.routing.md)
 
-## Advanced Tools
+## Herramientas avanzadas
 * [Métodos para crear un canal balanceado con un nodo de confianza](balancedchannelcreation.md)
 * [Notas de uso de Lightning Pool](pool.md)
 * [Bos Score](bosscore.md)
@@ -17,8 +17,8 @@
 * [Configuración avanzada y automatizada de costos](fees.md)
 * [Configurar un Watchtower y un Cliente en la red Lightning](watchtower.md)
 
-## Technicals
-* [High onchain fee environment](highonchainfees.md)
+## Técnicas
+* [Entorno de altos costos on-chain](highonchainfees.md)
 * [Compact the LND database \(channel.db\)](lnddatabasecompaction.md)
 * [Manage the LND onchain funds in Electrum Wallet](restorelndonchainfundsinelectrum.md)
 * [Automated LND update scripts for the RaspiBlitz](lnd.updates.md)
