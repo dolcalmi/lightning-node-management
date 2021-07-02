@@ -19,7 +19,7 @@
 
 ## Técnicas
 * [Entorno de altos costos on-chain](highonchainfees.md)
-* [Compact the LND database \(channel.db\)](lnddatabasecompaction.md)
+* [Compactar la base de datos LND \(channel.db\)](lnddatabasecompaction.md)
 * [Manage the LND onchain funds in Electrum Wallet](restorelndonchainfundsinelectrum.md)
 * [Automated LND update scripts for the RaspiBlitz](lnd.updates.md)
 * [Connecting to a lightning node remotely](lightning.connect.md)
