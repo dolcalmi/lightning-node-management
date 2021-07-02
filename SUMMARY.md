@@ -15,7 +15,7 @@
 * [Bos Score](bosscore.md)
 * [Ejemplo lnd.conf](lnd.conf.md)
 * [Configuración avanzada y automatizada de costos](fees.md)
-* [Set up a Watchtower and a Client on the Lightning Network](watchtower.md)
+* [Configurar un Watchtower y un Cliente en la red Lightning](watchtower.md)
 
 ## Technicals
 * [High onchain fee environment](highonchainfees.md)
