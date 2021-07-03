@@ -24,5 +24,5 @@
 * [Scripts de actualización automatizada de LND para RaspiBlitz](lnd.updates.md)
 * [Conectarse a un nodo Lightning de forma remota](lightning.connect.md)
 
-## Donate
-* [Donations](donations.md)
+## Donar
+* [Donaciones](donations.md)
