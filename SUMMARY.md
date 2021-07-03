@@ -21,7 +21,7 @@
 * [Entorno de altos costos on-chain](highonchainfees.md)
 * [Compactar la base de datos LND \(channel.db\)](lnddatabasecompaction.md)
 * [Administre los fondos LND on-chain en Electrum](restorelndonchainfundsinelectrum.md)
-* [Automated LND update scripts for the RaspiBlitz](lnd.updates.md)
+* [Scripts de actualización automatizada de LND para RaspiBlitz](lnd.updates.md)
 * [Connecting to a lightning node remotely](lightning.connect.md)
 
 ## Donate
