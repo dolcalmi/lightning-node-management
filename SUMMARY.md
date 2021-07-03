@@ -22,7 +22,7 @@
 * [Compactar la base de datos LND \(channel.db\)](lnddatabasecompaction.md)
 * [Administre los fondos LND on-chain en Electrum](restorelndonchainfundsinelectrum.md)
 * [Scripts de actualización automatizada de LND para RaspiBlitz](lnd.updates.md)
-* [Connecting to a lightning node remotely](lightning.connect.md)
+* [Conectarse a un nodo Lightning de forma remota](lightning.connect.md)
 
 ## Donate
 * [Donations](donations.md)

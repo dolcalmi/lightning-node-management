@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # Lightning-connect
-- [Remote connection formats summary table](#remote-connection-formats-summary-table)
+- [Resumen de formatos de conexión remota](#remote-connection-formats-summary-table)
 - [LND](#lnd)
   - [RPC](#rpc)
   - [LNDconnect](#lndconnect)
@@ -9,13 +9,13 @@
 - [C-lightning](#c-lightning)
   - [Spark Wallet](#spark-wallet)
   - [Sparko](#sparko)
-  - [C-lightning REST (with Zeus)](#c-lightning-rest-with-zeus)
+  - [C-lightning REST (con Zeus)](#c-lightning-rest-with-zeus)
   - [BTCPayserver](#btcpayserver-1)
 - [Eclair](#eclair)
   - [BTCPayServer](#btcpayserver-2)
-- [Notes](#notes)
+- [Notas](#notes)
 
-## Remote connection formats summary table
+## Resumen de formatos de conexión remota
 
 |LND | prefix | d | server | d | auth | d | tls | d|
 --- | --- | --- | --- | --- | --- | --- | --- | ---
@@ -54,14 +54,14 @@ poetry run ./suez --client-args=--rpcserver=IP_ADDRESS:GRPC_PORT --client-args=-
 ```
 
 ### LNDconnect
-* Specification  
+* Especificación  
 <https://github.com/LN-Zap/lndconnect/blob/master/lnd_connect_uri.md>
 
 ```
 lndconnect://<host>:<port>?[cert=<base64url DER certifcate>&]macaroon=<base64url macaroon>
 ```
 
-* implementation  
+* Implementación  
 <https://github.com/rootzoll/raspiblitz/blob/a22589c86109d56ecc1e1aca7abb214c7e9189c7/home.admin/config.scripts/bonus.lndconnect.sh#L194>
 
 ```
@@ -78,12 +78,12 @@ lndconnect="lndconnect://${host}:${port}${macaroonParameter}${certParameter}"
 
 ### Balance of Satoshis
 https://github.com/alexbosworth/balanceofsatoshis#saved-nodes
-* stored in
+* guardado en
 ```
 ~/.bos/YOUR_NODE_NAME/credentials.json
 ```
 
-* with base64 values
+* con valores base64
 
 ```
 {
@@ -92,13 +92,13 @@ https://github.com/alexbosworth/balanceofsatoshis#saved-nodes
 "socket": "host:port"
 }
 
-# For `cert` 
+# For `cert`
 base64 ~/.lnd/tls.cert | tr -d '\n'
 # For `macaroon`
 base64 ~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon | tr -d '\n'
 ```
 
-* with path
+* con path
 ```
 {
 "cert_path": "/path/lnd/tls.cert",
@@ -109,7 +109,7 @@ base64 ~/.lnd/data/chain/bitcoin/mainnet/admin.macaroon | tr -d '\n'
 
 ### BTCPayserver
 
-* LND via the REST proxy:
+* LND a través de proxy REST:
 ```
 type=lnd-rest;server=https://mylnd:8080/;macaroon=abef263adfe...
 type=lnd-rest;server=https://mylnd:8080/;macaroon=abef263adfe...;certthumbprint=abef263adfe...
@@ -136,37 +136,36 @@ allowinsecure=true
 https://github.com/shesek/spark-wallet  
 ### Sparko
 https://github.com/fiatjaf/sparko  
-Currently only works with a CA signed certificate.  
-See: <https://github.com/shesek/spark-wallet/blob/master/doc/tls.md#add-as-trusted-certificate-to-android>
+Actualmente solo funciona con un certificado firmado por una CA.  
+Ver: <https://github.com/shesek/spark-wallet/blob/master/doc/tls.md#add-as-trusted-certificate-to-android>
 
 
-* Simply:
+* Simplemente:
 ```
 URL?access-key=accessKey
 ```
-the `accessKey` has macaroon-like permissions
+El `accessKey` tiene permisos parecidos a macaroon
 
-
-### C-lightning REST (with Zeus)
+### C-lightning REST (con Zeus)
 https://github.com/Ride-The-Lightning/c-lightning-REST/
-* No standard yet, but needs:
+* Aún no hay estándar, pero necesita:
 ```
 URL?hex_macaroon
 ```
 
-* generate the `hex_macaroon`:
+* generar el `hex_macaroon`:
 ```
 xxd -plain /home/bitcoin/c-lightning-REST/certs/access.macaroon | tr -d '\n'
 ```
 
-### BTCPayserver 
-* c-lightning via TCP or unix domain socket connection:
+### BTCPayserver
+* c-lightning a través TCP o una conexión unix domain socket:
 ```
 type=clightning;server=unix://root/.lightning/lightning-rpc
 type=clightning;server=tcp://1.1.1.1:27743/
 ```
 
-* Lightning Charge via HTTPS:
+* Lightning carga a través de HTTPS:
 ```
 type=charge;server=https://charge:8080/;api-token=myapitoken...
 ```
@@ -174,21 +173,21 @@ type=charge;server=https://charge:8080/;api-token=myapitoken...
 ## Eclair
 
 ### BTCPayServer
-* Eclair via HTTPS:
+* Eclair a través de HTTPS:
 ```
 type=eclair;server=https://eclair:8080/;password=eclairpassword...
 ```
 
 
-## Notes
+## Notas
 
-* common dependencies
+* dependencias comunes
 ```
 sudo apt install qrencode base64 xxd
 ```
 
-* generate a QRcode in the terminal  
-(press `CTRL` + `-` to reduce the size)
+* generar un código QR en la consola  
+(presione `CTRL` + `-` para reducir el tamaño)
 ```
 string="desired content or $(command output)"
 qrencode -t ANSIUTF8 "$string"
@@ -213,15 +212,15 @@ base64 ~/.lnd/tls.cert | tr -d '\n'
 openssl x509 -noout -fingerprint -sha256 -in /root/.lnd/tls.cert | sed -e 's/.*=//;s/://g'
 ```
 
-* inspect a `tls.cert`
+* inspeccionar `tls.cert`
 ```
 openssl x509 -in /mnt/hdd/lnd/tls.cert -noout -text
 ```
 
-* display a Tor Hidden Service  
-more at: https://openoms.github.io/bitcoin-tutorials/tor_hidden_service_example.html
+* mostrar un servicio oculto de Tor
+más en: [https://openoms.github.io/bitcoin-tutorials/tor_hidden_service_example.html](https://openoms.github.io/bitcoin-tutorials/tor_hidden_service_example.html)
 ```
 sudo cat /var/lib/tor/SERVICE_NAME/hostname
-# or on a RaspiBlitz
+# o en un RaspiBlitz
 sudo cat /mnt/hdd/tor/SERVICE_NAME/hostname
 ```
